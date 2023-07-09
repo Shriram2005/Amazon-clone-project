@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Amazon.com
+    </title>
+    <!-- fonts import from fontawesome -->
+    <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
+
+    <!-- css for swiper import -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- 1st line of navigation bar  -->
+        <nav class="nav1 flex-box" id="top">
+            <div class="nav-amazon-logo">
+                <a href="#"><img src="contents/amazon_logo.png" class="wb" alt="amazon logo"></a>
+            </div>
+
+            <div class="nav-location-div flex-box wb">
+                <div class="nav-location-img">
+                    <img src="contents/location.png" alt="location symbol">
+                </div>
+                <div class="nav-location-text">
+                    <span class="nav-text1">Deliver to</span><br>
+                    <span class="nav-text2" id="nav-location-div-india">India</span>
+                </div>
+            </div>
+
+            <div class="nav-search-div flex-box">
+                <select name="location" id="loaction">
+                    <option value="">All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon">
+                <div class="nav-search-icon flex-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-right-box1 wb">
+                <div class="nav-text1">Hello, sign in</div>
+                <div class="nav-text2">Accounts & Lists</div>
+            </div>
+
+            <div class="nav-right-box2 wb">
+                <div class="nav-text1">Returns</div>
+                <div class="nav-text2">& Orders</div>
+            </div>
+
+            <div class="nav-right-box3 nav-text2 wb">
+                <img src="contents/cart.png" alt="cart" width="40px">
+                <span id="cart0">0</span>
+                <span id="cart-text">Cart</span>
+            </div>
+        </nav>
+        <!-- 2nd line of navigation bar  -->
+        <nav class="nav2">
+            <div class="nav2-left-items flex-box">
+                <a href="#" class="nav2-items"><img src="contents/lines.png" alt="lines" width="10px"
+                        id="nav2-lines-img"> All</a>
+                <a href="#" class="nav2-items">Today's Deals</a>
+                <a href="#" class="nav2-items">Customer Service</a>
+                <a href="#" class="nav2-items">Registry</a>
+                <a href="#" class="nav2-items">Gift Cards</a>
+                <a href="#" class="nav2-items">Sell</a>
+            </div>
+            <div class="nav2-right-item flex-box">
+                <a href="#" class="nav2-items" id="nav2-last-item">Shop deals in Electronics</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- changing images/ swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="contents/slider/slider1.jpg" alt="slider_img1"></div>
+
+            <div class="swiper-slide"><img src="contents/slider/slider2.jpg" alt="slider_img2"></div>
+            <div class="swiper-slide"><img src="contents/slider/slider3.jpg" alt="slider_img3"></div>
+            <div class="swiper-slide"><img src="contents/slider/slider4.jpg" alt="slider_img4"></div>
+            <div class="swiper-slide"><img src="contents/slider/slider5.jpg" alt="slider_img5"></div>
+            <div class="swiper-slide"><img src="contents/slider/slider6.jpg" alt="slider_img6"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- display message div  -->
+    <div class="shopping-top-text-div flex-box">
+        <div class="shopping-top-text">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+            <a href="https://www.amazon.in">Click here to go to amazon.in</a>
+        </div>
+    </div>
+
+    <!-- --------shopping section starts here--------  -->
+    <section>
+        <div class="shopping-area">
+
+            <!------------- area 1 ------------->
+            <div class="area1">
+                <!-- area 1 box 1 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Gaming accessories</h2>
+                    </div>
+                    <div class="inside-box">
+                        <div class="small-box">
+                            <a href=""><img src="contents/area1/box1_1_headsets.jpg"></a>
+                            <div class="small-box-name">
+                                <a href="">Headsets</a>
+                            </div>
+                        </div>
+                        <div class="small-box"><a href="">
+                                <img src="contents/area1/box1_2_keyboards.jpg" alt="keyboard"></a>
+                            <div class="small-box-name"><a href="">Keyboards</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box1_3_mouse.jpg" alt="mouse"></a>
+                            <div class="small-box-name"><a href="">Computer mice</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box1_4_chairs.jpg" alt="chair"></a>
+                            <div class="small-box-name"><a href="">Chairs</a></div>
+                        </div>
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 2 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Shop deals in Fashion</h2>
+                    </div>
+                    <div class="inside-box">
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box2_1_jeans.jpg"></a>
+                            <div class="small-box-name"><a href="">Jeans under $50</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box2_2_tops.jpg" alt="keyboard"></a>
+                            <div class="small-box-name"><a href="">Tops under $25</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box2_3_dresses.jpg" alt="mouse"></a>
+                            <div class="small-box-name"><a href="">Dresses under $25</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box2_4_shoes.jpg" alt="chair"></a>
+                            <div class="small-box-name"><a href="">Shoes under $25</a></div>
+                        </div>
+                        <div class="box-more">
+                            <a href="#">See all deals</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- area 1 box 3 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Refresh your space</h2>
+                    </div>
+                    <div class="inside-box">
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box3_1_dining.jpg"></a>
+                            <div class="small-box-name"><a href="">Dining</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box3_2_home.jpg" alt="keyboard"></a>
+                            <div class="small-box-name"><a href="">Home</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box3_3_home.jpg" alt="mouse"></a>
+                            <div class="small-box-name"><a href="">Kitchen</a></div>
+                        </div>
+                        <div class="small-box"><a href="">
+                            <img src="contents/area1/box3_4_health&beauty.jpg" alt="chair"></a>
+                            <div class="small-box-name"><a href="">Health and Beauty</a></div>
+                        </div>
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 4 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Fashion trends you like</h2>
+                    </div>
+                    <div class="inside-box">
+                        <div class="small-box">
+                            <img src="contents/area1/box4_1_dresses.jpg">
+                            <div class="small-box-name">Dresses</div>
+                        </div>
+                        <div class="small-box">
+                            <img src="contents/area1/box4_2_knits.jpg" alt="keyboard">
+                            <div class="small-box-name">Knits</div>
+                        </div>
+                        <div class="small-box">
+                            <img src="contents/area1/box4_3_jackets.jpg" alt="mouse">
+                            <div class="small-box-name">Jackets</div>
+                        </div>
+                        <div class="small-box">
+                            <img src="contents/area1/box4_4_jewelry.jpg" alt="chair">
+                            <div class="small-box-name">Jewelry</div>
+                        </div>
+                        <div class="box-more">
+                            <a href="#">Explore more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 5 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Health & Personal Care</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box2-personalCare.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 6 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Electronics</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box10-electronics.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 7 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Beauty picks</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box5-beauty.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 8 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>New arrivals in Toys</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box7-toys.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 9 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Discover fashion trends</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box8-faashion.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 10 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Home refresh ideas</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box14-homeIdeas.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 11 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Trackers & Smartwatches</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box13-watches.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- area 1 box 12 -->
+                <div class="box">
+                    <div class="box-title">
+                        <h2>Shop Laptops & Tablets</h2>
+                    </div>
+                    <div class="inside-box big-box">
+                        <img src="contents/boxes/box12-laptops&Tablets.jpg" alt="">
+                        <div class="box-more">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- footer starts here  -->
+    <footer>
+        <a href="#top" class="back-to-top">Back to top</a>
+        <div class="foot-area">
+            <!-- foot area 1 -->
+            <div class="foot-area-area1 foot-area-box">
+                <div class="foot-area-head">Get to Know Us</div>
+                <div class="foot-area-items">
+                    <ul>
+                        <li><a href="#">Careere</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Amazon</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Amazon Devices</a></li>
+                        <li><a href="#">Amazon Science</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- foot area 2 -->
+            <div class="foot-area-area2 foot-area-box">
+                <div class="foot-area-head">Make Money with Us</div>
+                <div class="foot-area-items">
+                    <ul>
+                        <li><a href="#">Sell products on Amazon</a></li>
+                        <li><a href="#">Sell on Amazon Business</a></li>
+                        <li><a href="#">Sell apps on Amazon</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Adveritse Your Products</a></li>
+                        <li><a href="#">Self-Publish with Us</a></li>
+                        <li><a href="#">Host on Amazon Hub</a></li>
+                        <li><a href="#">› See More Make Money with Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- foot area 3 -->
+            <div class="foot-area-area3 foot-area-box">
+                <div class="foot-area-head">Amazon Payment Products</div>
+                <div class="foot-area-items">
+                    <ul>
+                        <li><a href="#">Amazon Business Card</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Amazon Currency Converter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- foot area 4 -->
+            <div class="foot-area-area4 foot-area-box">
+                <div class="foot-area-head">Let Us Help You</div>
+                <div class="foot-area-items">
+                    <ul>
+                        <li><a href="#">Amazon and COVID-19</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shopping Rates & Policies</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">Amazon Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <hr style="color: #3d4652; height: 1px;">
+        <div class="foot-area2">
+            <img src="contents/amazon_logo.png" alt="" width="100px" id="foot-area2-amazonlogo">
+            <a href="#">
+                <img src="contents/globe.png" alt="" width="13px">
+                <span style="padding-right: 15px;">English</span>
+                <img src="contents/updown-arrow.png" alt="" width="10px">
+            </a>
+
+            <a href="#">
+                <span style="color: white; margin-inline: 5px;">$</span>USD - U.S. Dollar
+            </a>
+
+            <a href="#">
+                <img src="contents/united-states.png" alt="" style="width: 23px;">
+                United States
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script for using swiper/ moving images -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+    </script>
+    <script src="swiper.js"></script>
+</body>
+
+</html>
