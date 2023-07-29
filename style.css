@@ -1,13 +1,12 @@
 /* custom amazon fonts */
 @font-face {
-  font-family:amazon;
+  font-family: amazon;
   src: url("contents/fonts/amazon-font.ttf");
 }
 @font-face {
   font-family: amazon-bold;
   src: url("contents/fonts/amazon-font-bold.ttf");
 }
-
 
 * {
   margin: 0;
@@ -17,7 +16,7 @@
 
 body,
 html {
-  font-family: amazon ,sans-serif;
+  font-family: amazon, sans-serif;
   position: relative;
   height: 100%;
   width: 100%;
@@ -29,6 +28,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header{
+  position: relative;
+  z-index: 5;
 }
 
 .nav1 {
@@ -55,7 +59,7 @@ html {
 /* nav location div/box 2 */
 .nav-location-div {
   margin-left: 10px;
-  padding: 2px;
+  padding-left: 5px;
 }
 
 .nav-location-img img {
@@ -65,7 +69,7 @@ html {
   margin-right: 3px;
 }
 
-#nav-location-div-india{
+#nav-location-div-india {
   position: relative;
   top: -4px;
 }
@@ -88,18 +92,25 @@ html {
 .nav-search-div {
   width: 100%;
   margin: 10px;
-  min-width: 400px;
-  border-radius: 4px;
-  overflow: hidden;
+  min-width: 360px;
+  border-radius: 6px;
+  /* overflow: hidden; */
 }
 
 .nav-search-div select {
   width: 55px;
-  min-width: 45px;
   height: 40px;
   border: none;
   text-align: center;
+  font-size: 14px;
   color: rgb(93, 93, 93);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.nav-search-div select option {
+  color: black;
+  text-align: start;
 }
 
 .nav-search-div input {
@@ -108,7 +119,7 @@ html {
   border: none;
   text-indent: 10px;
   width: 100%;
-  font-size: 95%;
+  font-size: 16px;
 }
 
 .nav-search-icon {
@@ -116,6 +127,8 @@ html {
   height: 40px;
   width: 55px;
   min-width: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .nav-search-icon i {
@@ -123,26 +136,121 @@ html {
   color: #2d2d2d;
 }
 
-.nav-right-box1 {
-  padding: 10px;
-  padding-left: 20px;
+/*  nav-> right side of search box */
+
+.nav-language {
+  display: flex;
+  padding: 22px 12px 12px 10px;
+  margin-left: 10px;
 }
 
-/*  nav-> right side of search box */
+.nav-language img {
+  margin-right: 4px;
+}
+
+.nav-right-box1 {
+  padding: 10px;
+  position: relative;
+}
+
+/* account & list hover area here  */
+.acc-hover {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 384px;
+  left: -300px;
+  top: 50px;
+  z-index: 10;
+  border-radius: 3px;
+  padding: 14px 14px 7px 14px;
+  display: none;
+}
+
+#acc-hover-triangle {
+  font-size: 25px;
+  position: absolute;
+  right: 72px;
+  top: -14px;
+}
+
+.acc-hover-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#acc-hover-signin {
+  width: 218px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(255, 213, 43);
+  border-radius: 10px;
+}
+
+#acc-hover-new {
+  color: black;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.acc-hover-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acc-hover-title {
+  color: black;
+  font-size: 16px;
+  line-height: 15px;
+  font-family: amazon-bold;
+  white-space: nowrap;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.acc-hover-Lbox,
+.acc-hover-Rbox {
+  width: 100%;
+  margin: 10px;
+}
+
+.acc-hover-Lbox a,
+.acc-hover-Rbox a {
+  display: block;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  font-size: 14px;
+  padding-top: 5px;
+}
+/* account & list hover area ends here  */
+
 .nav-right-box2 {
   padding: 10px;
 }
 
-#cart0{
+/* drop down list arrow */
+.fa-caret-down {
+  font-size: 9px;
+  align-self: flex-end;
+  padding-left: 4px;
+  color: #9f9f9f;
+}
+
+#cart0 {
   font-size: 16px;
   color: #ff9100;
-  position:absolute;
+  position: absolute;
   left: 28px;
   top: 8px;
   user-select: none;
 }
 
-#cart-text{
+#cart-text {
   position: relative;
   right: 5px;
 }
@@ -170,11 +278,23 @@ html {
   text-decoration: none;
   margin: 1px;
   padding: 8px;
-  font-size: 90%;
+  font-size: 14px;
+}
+
+.nav2 a:first-child {
+  padding-left: 0px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+#nav2-all-text {
+  padding-left: 2px;
+  position: relative;
+  top: -3px;
 }
 
 #nav2-lines-img {
-  width: 20px;
+  padding-top: 3px;
   color: white;
 }
 
@@ -197,6 +317,24 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.swiper-wrapper{
+  user-select: none;
+}
+
+.swiper-gradient {
+  width: 100%;
+  height: 300px;
+  background: rgb(227, 230, 230);
+  background: linear-gradient(
+    0deg,
+    rgba(227, 230, 230, 1) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  position: relative;
+  top: -300px;
+  z-index: 1;
 }
 
 .swiper-button-prev {
@@ -234,13 +372,15 @@ html {
   position: absolute;
   background-color: #f5f6f6;
   white-space: nowrap;
-  font-size: 90%;
+  font-size: 14px;
   padding: 10px;
   width: 100%;
 }
 
-.shopping-top-text a {
+.shopping-top-text a,
+.acc-hover-top a {
   text-decoration: none;
+  color: #007185;
 }
 
 .shopping-area {
@@ -267,7 +407,7 @@ html {
 }
 
 .box-title h2 {
-  font-family: amazon-bold; 
+  font-family: amazon-bold;
   font-weight: 400;
   font-size: 21px;
   width: 100%;
@@ -293,7 +433,7 @@ html {
 .small-box-name {
   margin: 0px 0px 20px 0px;
   align-self: self-start;
-  font-size: 80%;
+  font-size: 13px;
 }
 
 .box-more {
@@ -305,10 +445,11 @@ html {
 
 .box-more a {
   text-decoration: none;
-  font-size: 80%;
+  font-size: 13.5px;
+  color: #007185;
 }
 
-.small-box-name a{
+.small-box-name a {
   text-decoration: none;
   color: black;
   display: block;
@@ -326,11 +467,11 @@ html {
   padding: 0px 10px 10px 10px;
 }
 
-
 /* ----------footer starts here------- */
 
 footer {
   width: 100%;
+  margin-top: -250px;
 }
 
 .back-to-top {
@@ -357,7 +498,7 @@ footer {
 .foot-area-head {
   color: white;
   font-weight: 600;
-  white-space:nowrap;
+  white-space: nowrap;
   margin-bottom: 10px;
 }
 
@@ -369,7 +510,7 @@ footer {
 .foot-area ul li a {
   text-decoration: none;
   color: #c5c5c5;
-  font-size: 90%;
+  font-size: 15px;
 }
 
 .foot-area-area1 {
@@ -389,7 +530,7 @@ footer {
   padding: 0px 10px;
 }
 
-.foot-area2{
+.foot-area2 {
   padding-top: 30px;
   padding-bottom: 50px;
   background-color: #232f3e;
@@ -398,13 +539,13 @@ footer {
   align-items: center;
 }
 
-#foot-area2-amazonlogo{
-margin-right: 50px;
+#foot-area2-amazonlogo {
+  margin-right: 50px;
 }
 
-.foot-area2 a{
+.foot-area2 a {
   text-decoration: none;
-  font-size: 90%;
+  font-size: 15px;
   color: #c5c5c5;
   border: 1px solid gray;
   border-radius: 3px;
@@ -412,21 +553,35 @@ margin-right: 50px;
   padding: 6px 18px 6px 6px;
 }
 
-
-
-
 /* ----------hover effects-------- */
 
-.wb:hover {
-  border: 1px solid rgb(255, 255, 255);
+.hover-black-effect{
+  background-color: rgb(0, 0, 0,0.6);
+  position:fixed;
+  bottom: 0px;
+  width: 100%;
+  height:100%;
+  z-index: 4;
+  display: none;
 }
 
-.nav-search-div:hover {
-  border: 2.5px solid #ff9100;
-}
 
+.wb:hover,
 .nav2 a:hover {
   border: 1px solid rgb(255, 255, 255);
+}
+
+.nav-search-div select:hover{
+  color: black;
+}
+
+/* .nav-search-div:hover {
+  border: 2.5px solid #ff9100;
+} */
+
+#acc-hover-signin:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff9100;
 }
 
 .nav-text2:hover,
@@ -442,7 +597,10 @@ margin-right: 50px;
 }
 
 .shopping-top-text a:hover,
-.box-more a:hover {
+.box-more a:hover,
+#acc-hover-new a:hover,
+.acc-hover-Lbox a:hover,
+.acc-hover-Rbox a:hover {
   text-decoration: underline;
   color: rgb(181, 45, 0);
 }
@@ -455,6 +613,11 @@ margin-right: 50px;
   text-decoration: underline;
 }
 
+/* acc & list show   */
+.nav-right-box1:hover >.acc-hover{
+  display: block;
+}
+
 /* ----------------media queries / responsiveness------------- */
 
 @media (width>1200px) {
@@ -462,5 +625,3 @@ margin-right: 50px;
     flex-basis: calc(25% - 20px);
   }
 }
-
-

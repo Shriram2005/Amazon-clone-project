@@ -7,6 +7,9 @@
     <title>
         Amazon.com
     </title>
+    <link rel="icon" href="contents/amazon_title.png" type="image/png">
+
+
     <!-- fonts import from fontawesome -->
     <script src="https://kit.fontawesome.com/85a51766c8.js" crossorigin="anonymous"></script>
 
@@ -14,7 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="style.css">
-
 
 </head>
 
@@ -37,18 +39,93 @@
             </div>
 
             <div class="nav-search-div flex-box">
-                <select name="location" id="loaction">
-                    <option value="">All</option>
+                <select name="category" id="category">
+                    <option value="#" hidden>All</option>
+                    <option value="#">All Departmants</option>
+                    <option value="#">Arts & Crafts</option>
+                    <option value="#">Automative</option>
+                    <option value="#">Beauty & Personal Care</option>
+                    <option value="#">Books</option>
+                    <option value="#">Computers</option>
+                    <option value="#">Deals</option>
+                    <option value="#">Electronics</option>
+                    <option value="#">Boys' Fashion</option>
+                    <option value="#">Girls' Fashion</option>
+                    <option value="#">Health & Household</option>
+                    <option value="#">Home &Kitchen</option>
+                    <option value="#">Luggage</option>
+                    <option value="#">Men's Fashion</option>
+                    <option value="#">Movies & TV</option>
+                    <option value="#">Digital Music</option>
+                    <option value="#">Toys & Games</option>
+                    <option value="#">Video Games</option>
+                    <option value="#">Women's Fashion</option>
+                    <option value="#">Sports & Outdoor</option>
+                    <option value="#">Kindle Store</option>
+                    <option value="#">Pet Supplies</option>
+                    <option value="#">Software</option>
+                    <option value="#">Kindle Store</option>
+                    <option value="#" hidden>All</option>
                 </select>
+
                 <input type="text" placeholder="Search Amazon">
                 <div class="nav-search-icon flex-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
 
+            <div class="nav-language nav-text2 wb">
+                <img src="contents/united-states.png" alt="logo" style="width: 23px;">EN<i
+                    class="fa-solid fa-caret-down"></i>
+            </div>
+
             <div class="nav-right-box1 wb">
                 <div class="nav-text1">Hello, sign in</div>
-                <div class="nav-text2">Accounts & Lists</div>
+                <div class="nav-text2">Account & Lists<i class="fa-solid fa-caret-down"></i></div>
+
+                <!-- account & list hover area box  -->
+                <div class="acc-hover">
+                    <!-- acc hover top -->
+                    <i class="fa-solid fa-caret-up" id="acc-hover-triangle" style="color: #ffffff;"></i>
+                    <div class="acc-hover-top"><a href="#">
+                            <span id="acc-hover-signin">Sign in</span></a>
+                        <span id="acc-hover-new">
+                            New customer? <a href="#">Start here</a>
+                        </span>
+                    </div>
+                    <!-- acc hover box -->
+                    <div class="acc-hover-box">
+                        <!-- acc hover left  -->
+                        <div class="acc-hover-Lbox">
+                            <div class="acc-hover-title">Your list</div>
+                            <a href="#">Create a List</a>
+                            <a href="#">Create a List or Registry</a>
+
+                        </div>
+                        <!-- acc hover right  -->
+                        <div class="acc-hover-Rbox">
+                            <div class="acc-hover-title">Your account</div>
+
+                            <a href="#">Account</a>
+                            <a href="#">Orders</a>
+                            <a href="#">Recommendations</a>
+                            <a href="#">Browsing History</a>
+                            <a href="#">Watchlist</a>
+                            <a href="#">Video Purchases & Rentals</a>
+                            <a href="#">Kindle Unlimited</a>
+                            <a href="#">Content & Devices</a>
+                            <a href="#">Subscribe & Save Items</a>
+                            <a href="#">Memberships & Subscriptions</a>
+                            <a href="#">Music Library</a>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
             </div>
 
             <div class="nav-right-box2 wb">
@@ -65,8 +142,8 @@
         <!-- 2nd line of navigation bar  -->
         <nav class="nav2">
             <div class="nav2-left-items flex-box">
-                <a href="#" class="nav2-items"><img src="contents/lines.png" alt="lines" width="10px"
-                        id="nav2-lines-img"> All</a>
+                <a href="#" class="nav2-items"><img src="contents/lines.png" alt="lines" width="20px"
+                        id="nav2-lines-img"><span id="nav2-all-text">All</span></a>
                 <a href="#" class="nav2-items">Today's Deals</a>
                 <a href="#" class="nav2-items">Customer Service</a>
                 <a href="#" class="nav2-items">Registry</a>
@@ -83,9 +160,7 @@
     <!-- changing images/ swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide"><img src="contents/slider/slider1.jpg" alt="slider_img1"></div>
-
             <div class="swiper-slide"><img src="contents/slider/slider2.jpg" alt="slider_img2"></div>
             <div class="swiper-slide"><img src="contents/slider/slider3.jpg" alt="slider_img3"></div>
             <div class="swiper-slide"><img src="contents/slider/slider4.jpg" alt="slider_img4"></div>
@@ -95,7 +170,10 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
+        <!-- adding blue-transparent gradient to swiper images -->
+        <div class="swiper-gradient"></div>
     </div>
+
 
     <!-- display message div  -->
     <div class="shopping-top-text-div flex-box">
@@ -128,11 +206,11 @@
                             <div class="small-box-name"><a href="">Keyboards</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box1_3_mouse.jpg" alt="mouse"></a>
+                                <img src="contents/area1/box1_3_mouse.jpg" alt="mouse"></a>
                             <div class="small-box-name"><a href="">Computer mice</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box1_4_chairs.jpg" alt="chair"></a>
+                                <img src="contents/area1/box1_4_chairs.jpg" alt="chair"></a>
                             <div class="small-box-name"><a href="">Chairs</a></div>
                         </div>
                         <div class="box-more">
@@ -148,19 +226,19 @@
                     </div>
                     <div class="inside-box">
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box2_1_jeans.jpg"></a>
+                                <img src="contents/area1/box2_1_jeans.jpg"></a>
                             <div class="small-box-name"><a href="">Jeans under $50</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box2_2_tops.jpg" alt="keyboard"></a>
+                                <img src="contents/area1/box2_2_tops.jpg" alt="keyboard"></a>
                             <div class="small-box-name"><a href="">Tops under $25</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box2_3_dresses.jpg" alt="mouse"></a>
+                                <img src="contents/area1/box2_3_dresses.jpg" alt="mouse"></a>
                             <div class="small-box-name"><a href="">Dresses under $25</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box2_4_shoes.jpg" alt="chair"></a>
+                                <img src="contents/area1/box2_4_shoes.jpg" alt="chair"></a>
                             <div class="small-box-name"><a href="">Shoes under $25</a></div>
                         </div>
                         <div class="box-more">
@@ -177,19 +255,19 @@
                     </div>
                     <div class="inside-box">
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box3_1_dining.jpg"></a>
+                                <img src="contents/area1/box3_1_dining.jpg"></a>
                             <div class="small-box-name"><a href="">Dining</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box3_2_home.jpg" alt="keyboard"></a>
+                                <img src="contents/area1/box3_2_home.jpg" alt="keyboard"></a>
                             <div class="small-box-name"><a href="">Home</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box3_3_home.jpg" alt="mouse"></a>
+                                <img src="contents/area1/box3_3_home.jpg" alt="mouse"></a>
                             <div class="small-box-name"><a href="">Kitchen</a></div>
                         </div>
                         <div class="small-box"><a href="">
-                            <img src="contents/area1/box3_4_health&beauty.jpg" alt="chair"></a>
+                                <img src="contents/area1/box3_4_health&beauty.jpg" alt="chair"></a>
                             <div class="small-box-name"><a href="">Health and Beauty</a></div>
                         </div>
                         <div class="box-more">
@@ -428,12 +506,8 @@
     </footer>
 
 
-
-
-
-
-
-
+    <!-- hover-black-effect  -->
+    <div class="hover-black-effect"></div>
 
 
 
@@ -444,6 +518,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
     </script>
     <script src="swiper.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
