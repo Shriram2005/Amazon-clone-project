@@ -22,6 +22,8 @@ html {
   width: 100%;
   min-width: 1000px;
   background-color: #e3e6e6;
+  scroll-behavior: smooth;
+  
 }
 
 .flex-box {
@@ -35,6 +37,11 @@ header{
   z-index: 5;
 }
 
+.wb{
+  border: 1px solid transparent;
+}
+
+/* ---------nav1 starts here------- */
 .nav1 {
   height: 60px;
   width: 100%;
@@ -279,6 +286,7 @@ header{
   margin: 1px;
   padding: 8px;
   font-size: 14px;
+  border: 1px solid transparent;
 }
 
 .nav2 a:first-child {
